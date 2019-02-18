@@ -1,4 +1,4 @@
-apply from: '../libgdx/gradle/dependencies.gradle'
+//apply from: '../libgdx/gradle/dependencies.gradle'
 
 buildscript {
     repositories {
