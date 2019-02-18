@@ -1,8 +1,8 @@
 include ':androidxLibrary' //, ':extensions:gdx-jnigen', ':gdx'
 
 
-include 'gdx'
-project(':gdx').projectDir = new File('../libgdx/gdx')
-
-include 'extensions:gdx-jnigen'
-project(':extensions:gdx-jnigen').projectDir = new File('../libgdx/extensions/gdx-jnigen')
+//include 'gdx'
+//project(':gdx').projectDir = new File('../libgdx/gdx')
+//
+//include 'extensions:gdx-jnigen'
+//project(':extensions:gdx-jnigen').projectDir = new File('../libgdx/extensions/gdx-jnigen')
