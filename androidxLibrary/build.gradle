@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+//apply plugin:'java'
+
+
+android {
+    compileSdkVersion 28
+}
+
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile project(":gdx")
+
+    implementation "androidx.fragment:fragment:1.0.0"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+
+
+}

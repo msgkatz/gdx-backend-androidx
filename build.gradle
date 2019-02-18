@@ -1,0 +1,39 @@
+apply from: '../libgdx/gradle/dependencies.gradle'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.0'
+        // classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+project(':extensions:gdx-jnigen') {
+    apply plugin: "java"
+
+    sourceCompatibility = 1.6
+    targetCompatibility = 1.6
+
+    compileJava.options.encoding = 'UTF-8'
+
+    sourceSets.main.java.srcDirs = ["src"]
+    sourceSets.main.resources.srcDirs = ["src"]
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
