@@ -11,7 +11,7 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 28
-        versionCode 3
+        versionCode 4
         versionName "1.9.8"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -21,7 +21,7 @@ android {
 
 dependencies {
 
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
 
     // https://mvnrepository.com/artifact/com.badlogicgames.gdx/gdx
     implementation group: 'com.badlogicgames.gdx', name: 'gdx', version: '1.9.8'
