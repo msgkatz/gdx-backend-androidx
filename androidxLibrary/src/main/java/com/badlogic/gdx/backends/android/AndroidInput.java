@@ -215,10 +215,10 @@ public class AndroidInput implements Input, OnKeyListener, OnTouchListener {
 		return gyroscopeValues[2];
 	}
 
-	@Override
-	public int getMaxPointers() {
-		return 0;
-	}
+//	@Override
+//	public int getMaxPointers() {
+//		return 0;
+//	}
 
 	@Override
 	public void getTextInput (final TextInputListener listener, final String title, final String text, final String hint) {
@@ -301,15 +301,15 @@ public class AndroidInput implements Input, OnKeyListener, OnTouchListener {
 		}
 	}
 
-	@Override
-	public float getPressure() {
-		return 0;
-	}
-
-	@Override
-	public float getPressure(int pointer) {
-		return 0;
-	}
+//	@Override
+//	public float getPressure() {
+//		return 0;
+//	}
+//
+//	@Override
+//	public float getPressure(int pointer) {
+//		return 0;
+//	}
 
 	@Override
 	public synchronized boolean isKeyPressed (int key) {
