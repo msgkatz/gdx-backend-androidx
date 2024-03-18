@@ -216,6 +216,11 @@ public class AndroidInput implements Input, OnKeyListener, OnTouchListener {
 	}
 
 	@Override
+	public int getMaxPointers() {
+		return 0;
+	}
+
+	@Override
 	public void getTextInput (final TextInputListener listener, final String title, final String text, final String hint) {
 		handle.post(new Runnable() {
 			public void run () {
@@ -294,6 +299,16 @@ public class AndroidInput implements Input, OnKeyListener, OnTouchListener {
 		synchronized (this) {
 			return touched[pointer];
 		}
+	}
+
+	@Override
+	public float getPressure() {
+		return 0;
+	}
+
+	@Override
+	public float getPressure(int pointer) {
+		return 0;
 	}
 
 	@Override
